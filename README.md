@@ -14,31 +14,43 @@
   * [Contact](#contact)
 
 ## Description
-description
 
-<!-- *SMPL-X* (SMPL eXpressive) is a unified body model with shape parameters trained jointly for the
-face, hands and body. *SMPL-X* uses standard vertex based linear blend skinning with learned corrective blend
-shapes, has N = 10, 475 vertices and K = 54 joints,
-which include joints for the neck, jaw, eyeballs and fingers. 
-SMPL-X is defined by a function M(θ, β, ψ), where θ is the pose parameters, β the shape parameters and
-ψ the facial expression parameters. -->
+This repository aims to **document and summarize papers and repositories** in the fields of **embodied intelligence, human motion generation**, and related areas. It also provides **practical usage guidance** for the included resources.
+
+- 📂 **Codes**: Contains implementations of common models, including **diffusion-based methods** and others, with usage examples.  
+- 📂 **Datasets**: Includes commonly used datasets, preprocessing scripts, and models, along with instructions on how to use them.  
+- 📂 **Papers**: Provides **survey summaries, paper reviews, and reproduction notes** to help understand the latest research trends and insights.
+
+> ⚡ This repository is **continuously updated** with new papers, code, and datasets!
+
 
 ## News
 
-- 22 October 2025: Provides an introduction to the SMPLX model and instructions for its use; follow the steps in the .ipynb notebook to run the code and visualize the results with Wid3D. [here](./Datasets/SMPLX/SMPLX_guide.md)
+- 📝 23 October 2025: **New Human Motion Generation Survey (Ongoing 🔄). [here](./Papers/Survey_on_Human_Motion_Generation.md)**
 
-- 22 October 2025: The repository was established.
+- 📖 22 October 2025: **Provides an introduction to the SMPLX model and instructions for its use; follow the steps in the .ipynb notebook to run the code and visualize the results with Wid3D. [here](./Datasets/SMPLX/SMPLX_guide.md)**
+
+- 🆕 22 October 2025: **The repository was established.**
+
 
 ## Installation
-installation
 
-## Guider
-guider
+To get started, **clone this repository** and follow the guidance in the **Guider** section.  
+According to the instructions for each part, install the required **packages, models, and environments**.
+
+```bash
+# Clone the repository
+git clone https://github.com/LiuYZ2024/SDUerHuman.git
+cd SDUerHuman
+```
+
+##  Guider
+This section provides links to important resources and surveys included in this repository:
+
+- **SMPLX** ------ [Link to it](./Datasets/SMPLX/SMPLX_guide.md)
+- **Human Motion Generation Survey** ------ [Link to it](./Papers/Survey_on_Human_Motion_Generation.md)
+- **Motion Representation Comparison** ------ [Link to it](.Datasets/SMPLX/MotionRepresentation.md)
+
 
 ## Contact
-contact
-<!-- The code of this repository was implemented by [Vassilis Choutas](vassilis.choutas@tuebingen.mpg.de).
-
-For questions, please contact [smplx@tue.mpg.de](smplx@tue.mpg.de).
-
-For commercial licensing (and all related questions for business applications), please contact [ps-licensing@tue.mpg.de](ps-licensing@tue.mpg.de). -->
+lyzle2024@163.com
