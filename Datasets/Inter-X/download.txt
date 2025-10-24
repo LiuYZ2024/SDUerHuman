@@ -1,0 +1,17 @@
+Inter-X Dataset Request Form
+Requester,
+
+We are happy to release our Inter-X dataset proposed in "Inter-X: Towards Versatile Human-Human Interaction Analysis (CVPR 2024)".
+
+We provide several ways to download the datasets (~31G):
+
+- Google Drive: https://drive.google.com/drive/folders/1eSekYd4jPTAPnAabLbr2lrrC8_Fwa_b0?usp=drive_link
+- Baidu Netdisk: 链接: https://pan.baidu.com/s/1_aCC6wgwnr72efNttIvf5w?pwd=q796 提取码: q796
+
+We ask that anyone that uses the data, or pre-trained models, please cite this paper: https://arxiv.org/abs/2312.16051.
+
+For any updates of the Inter-X dataset, please follow our project page https://liangxuy.github.io/inter-x/ and our GitHub repository https://github.com/liangxuy/Inter-X/.
+
+The provided data falls under the https://github.com/liangxuy/Inter-X/blob/main/LICENSE for Non-Commercial Use. By downloading the Inter-X Dataset, you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree to any of these terms, please do not use the Service.
+
+Thank you.
