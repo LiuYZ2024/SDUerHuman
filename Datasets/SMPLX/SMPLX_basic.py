@@ -383,6 +383,8 @@ def visualize_smplx_sequence(npz_path, gender='neutral', every_n_frame=1):
     global_orient = torch.tensor(data.get('root_orient', np.zeros((1, 3))), dtype=torch.float32).unsqueeze(1)
     transl = torch.tensor(data.get('trans', np.zeros((1, 3))), dtype=torch.float32)
 
+    # raise RuntimeError(body_pose.shape)
+
     n_frames = pose_body.shape[0]
     print(f"Total frames: {n_frames}, betas: {betas.shape}")
 
@@ -435,7 +437,7 @@ def visualize_smplx_sequence(npz_path, gender='neutral', every_n_frame=1):
 
     print(f"✅ Visualization ready at Wis3D: {pm.outputs / 'wis3d'}")
 
-# visualize_smplx_sequence(npz_path=pm.root_dataset/'P1.npz', every_n_frame=1)
+# visualize_smplx_sequence(npz_path=pm.root_dataset/'data_converted_to_smplx/test001_smplx_params.npz', every_n_frame=1)
 
 def visualize_two_smplx_sequences(npz_path1, npz_path2, gender='neutral', every_n_frame=1):
     """

@@ -1,9 +1,9 @@
 ## SDUerHuman: A repository for recording the learning process of embodied intelligence.
 
 <!-- [[Paper Page](https://smpl-x.is.tue.mpg.de)] [[Paper](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/497/SMPL-X.pdf)]
-[[Supp. Mat.](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/498/SMPL-X-supp.pdf)]
+[[Supp. Mat.](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/498/SMPL-X-supp.pdf)]-->
 
-![SMPL-X Examples](./images/teaser_fig.png) -->
+![SMPL-X Examples](./demo.gif) 
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ This section provides links to important resources and surveys included in this 
 
 - **SMPLX** ------ [Link to it](./Datasets/SMPLX/SMPLX_guide.md)
 - **Human Motion Generation Survey** ------ [Link to it](./Papers/Survey_on_Human_Motion_Generation.md)
-- **Motion Representation Comparison** ------ [Link to it](.Datasets/SMPLX/MotionRepresentation.md)
+- **Motion Representation Comparison** ------ [Link to it](.Datasets/MotionRepresentation.md)
 
 
 ## Contact

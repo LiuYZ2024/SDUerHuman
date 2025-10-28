@@ -318,6 +318,51 @@ class HWis3D(Wis3D):
         # Reset Wis3D scene id.
         self.set_scene_id(0)
 
+    def add_traj_xz(
+        self,
+        positions : torch.Tensor,
+        name      : str,
+        offset    : int = 0,
+    ):
+        '''
+        Visualize the positions change across the time as trajectory, projected to XZ plane.
+        The newer position will be brighter.
+
+        ### Args
+        - positions: torch.Tensor, (L, 3), L ~ sequence length
+        - name: str
+            - The name of the trajectory.
+        - offset: int, default = 0
+            - The offset for the sequence index.
+        '''
+        assert (len(positions.shape) == 2), 'The input `positions` should have 2 dimensions: (L, 3).'
+        assert (positions.shape[-1] == 3), 'The last dimension of `positions` should be 3.'
+
+        # 投影到 XZ 平面
+        positions_proj = positions.clone()
+        positions_proj[:,1] = 0  # y轴置0
+
+        # Get the sequence length.
+        L, _ = positions_proj.shape
+        positions_proj = positions_proj.detach().cpu()
+        traj = positions_proj[[0]] # (1, 3)
+
+        # Prepare the gradient colors.
+        grad_colors = torch.linspace(208, 48, L).reshape((L, 1)).repeat(1, 3) # (L, 3)
+
+        for i in range(L):
+            traj = torch.cat((traj, positions_proj[[i]]), dim=0) # (i+2, 3)
+            self.set_scene_id(i + offset)
+            self.add_lines(
+                start_points = traj[:-1],
+                end_points   = traj[1:],
+                colors       = grad_colors[-(i+1):],
+                name         = name,
+            )
+
+        # Reset Wis3D scene id.
+        self.set_scene_id(0)
+
 
     def add_sphere_sensors(
         self,
