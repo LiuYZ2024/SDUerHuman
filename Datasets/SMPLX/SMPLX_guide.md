@@ -17,14 +17,14 @@ models
 ```
 ### 2️⃣ 创建 Conda 环境
 
-根据仓库中的 `conda_env.yaml` 文件创建环境，执行命令：
+根据仓库中的 `environment.yaml` 文件创建环境，执行命令：
 
 ```bash
 # 创建 conda 环境
-conda env create -f conda_env.yaml
+conda env create -f environment.yaml
 
 # 激活环境
-conda activate smplx
+conda activate human
 ```
 ### 3️⃣ 运行 SMPLX_basic.ipynb 文件（要将kernal切换到conda环境）
 

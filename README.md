@@ -3,7 +3,7 @@
 <!-- [[Paper Page](https://smpl-x.is.tue.mpg.de)] [[Paper](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/497/SMPL-X.pdf)]
 [[Supp. Mat.](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/498/SMPL-X-supp.pdf)]-->
 
-![SMPL-X Examples](./demo.gif) 
+![visualize Inter-X](./demo.gif) 
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ This repository aims to **document and summarize papers and repositories** in th
 
 ## News
 
-- 📝 23 October 2025: **New Human Motion Generation Survey (Ongoing 🔄). [here](./Papers/Survey_on_Human_Motion_Generation.md)**
+- 📝 23 October 2025: **Human Motion Generation Survey (Ongoing 🔄). [here](./Papers/Survey_on_Human_Motion_Generation.md)**
 
 - 📖 22 October 2025: **Provides an introduction to the SMPLX model and instructions for its use; follow the steps in the .ipynb notebook to run the code and visualize the results with Wid3D. [here](./Datasets/SMPLX/SMPLX_guide.md)**
 
