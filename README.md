@@ -44,6 +44,11 @@ According to the instructions for each part, install the required **packages, mo
 # Clone the repository
 git clone https://github.com/LiuYZ2024/SDUerHuman.git
 cd SDUerHuman
+
+# environment
+conda env create -f environment.yml
+# install wis3d
+pip install https://github.com/zju3dv/Wis3D/releases/download/2.0.0/wis3d-2.0.0-py3-none-any.whl
 ```
 
 ##  Guider

@@ -187,5 +187,4 @@ dependencies:
       - webcolors==24.11.1
       - webencodings==0.5.1
       - websocket-client==1.9.0
-      - wis3d==2.0.0
       - zc-lockfile==4.0

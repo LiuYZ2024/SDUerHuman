@@ -49,6 +49,10 @@ conda activate human
 
 [data_output](./data_output/): 输出的可视化数据
 
+[demo_263_output](./demo_263_output/): 存放263维动作表示文件，以及mean_std
+
+[demo_272_output](./demo_272_output/): 存放272维动作表示文件，以及mean_std
+
 **convert_272_to_smplx.py， convert_272_to_smplx_vis_B.py， convert_263_to_global_pos_vis.py 的运行命令在文件开头的注释中给出**
 
 ---
