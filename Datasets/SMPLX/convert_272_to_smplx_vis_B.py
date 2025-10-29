@@ -5,6 +5,8 @@ convert_272_to_smplx_v2.py
 Convert MotionStreamer 272-d representation -> SMPL-like parameters and save as .npz
 Support B motions in a single file and optional Wis3D visualization of all sequences together.
 
+wis3d --vis_dir Datasets/SMPLX/data_output/wis3d --host 0.0.0.0 --port 19090
+
 python Datasets/SMPLX/convert_272_to_smplx_vis_B.py \
     --poses Datasets/SMPLX/demo_272_output/test272_1.npy \
     --output Datasets/SMPLX/data_converted_to_smplx/ \

@@ -4,6 +4,8 @@ convert_263_to_smplx.py
 
 Convert 263-d representation -> IK-recovered SMPL-X 22-joint global skeleton and visualize using Wis3D.
 
+wis3d --vis_dir Datasets/SMPLX/data_output/wis3d_263 --host 0.0.0.0 --port 19093
+
 python -m Datasets.SMPLX.convert_263_to_global_pos_vis \
     --poses Datasets/SMPLX/demo_263_output/test263_1.npy \
     --visualize \

@@ -34,10 +34,22 @@ conda activate human
 [SMPLX_basic.py](./SMPLX_basic.py): SMPLX_basic.ipynb中py部分的汇总，方便运行和调试
 
 [convert_272_to_smplx.py](./convert_272_to_smplx.py): 将272维表示的动作数据转成smplx参数的npz文件，可以利用SMPLX_basic.py中的visualize_smplx_sequence函数可视化
+```
+# 使用前请在另一个终端运行
+wis3d --vis_dir Datasets/SMPLX/data_output/wis3d --host 0.0.0.0 --port 19090
+```
 
 [convert_272_to_smplx_vis_B.py](./convert_272_to_smplx_vis_B.py): 将272维表示的动作数据转成smplx参数的npz文件，支持Batch输入，直接在当前脚本中调用可视化
+```
+# 使用前请在另一个终端运行
+wis3d --vis_dir Datasets/SMPLX/data_output/wis3d --host 0.0.0.0 --port 19090
+```
 
-[convert_263_to_global_pos_vis.py](./convert_263_to_global_pos_vis.py): 将263维表示的动作数据转成动作的全局关节坐标，支持Batch输入，直接在当前脚本中调用可视化
+[convert_263_to_global_pos_vis.py](./convert_263_to_global_pos_vis.py): 将263维表示的动作数据转成动作的全局关节坐标，支持Batch输入，直接在当前脚本中调用可视化。
+```
+# 使用前请在另一个终端运行
+wis3d --vis_dir Datasets/SMPLX/data_output/wis3d_263 --host 0.0.0.0 --port 19093
+```
 
 [P1.npz](./P1.npz): 示例smplx动作序列（取自Inter-X）
 
