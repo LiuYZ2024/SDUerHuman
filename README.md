@@ -26,6 +26,8 @@ This repository aims to **document and summarize papers and repositories** in th
 
 ## News
 
+- 📖 29 October 2025: **Provided a script that converts 272-dimensional motion representation (MotionStreamer) into SMPL-X parameters and visualizes it, and a script that converts 263-dimensional motion representation (HumanML3D) into global joint coordinates and visualizes it.[here](./Datasets/SMPLX/SMPLX_guide.md)**
+
 - 📝 23 October 2025: **Human Motion Generation Survey (Ongoing 🔄). [here](./Papers/Survey_on_Human_Motion_Generation.md)**
 
 - 📖 22 October 2025: **Provides an introduction to the SMPLX model and instructions for its use; follow the steps in the .ipynb notebook to run the code and visualize the results with Wid3D. [here](./Datasets/SMPLX/SMPLX_guide.md)**

@@ -7,7 +7,7 @@ from smplx import SMPLX
 from utils.path_manager_smplx import PathManager_SMPLX
 from utils.wis3d_utils import HWis3D as Wis3D
 # wis3d --vis_dir /home/liu/lyz/Human/Datasets/SMPLX/data_output/wis3d --host 0.0.0.0 --port 19090
-
+# wis3d --vis_dir /home/liu/lyz/Human/Datasets/SMPLX/data_output/wis3d_263 --host 0.0.0.0 --port 19093
 from utils.skeleton_structure import Skeleton_SMPL22 as Skeleton_SMPLX22
 
 pm = PathManager_SMPLX()
@@ -437,7 +437,7 @@ def visualize_smplx_sequence(npz_path, gender='neutral', every_n_frame=1):
 
     print(f"✅ Visualization ready at Wis3D: {pm.outputs / 'wis3d'}")
 
-# visualize_smplx_sequence(npz_path=pm.root_dataset/'data_converted_to_smplx/test001_smplx_params.npz', every_n_frame=1)
+visualize_smplx_sequence(npz_path=pm.root_dataset/'data_converted_to_smplx/test272_1_seq000_smplx_params.npz', every_n_frame=1)
 
 def visualize_two_smplx_sequences(npz_path1, npz_path2, gender='neutral', every_n_frame=1):
     """

@@ -4,9 +4,12 @@ convert_272_to_smplx_v2.py
 
 Convert MotionStreamer 272-d representation -> SMPL-like parameters and save as .npz
 
-Usage examples:
-    python convert_272_to_smplx_v2.py --poses data_converted_to_272/P1_motion272.npy --output data_converted_to_smplx/
-    python convert_272_to_smplx_v2.py --is_folder --poses data_converted_to_272/ --output data_converted_to_smplx/
+python Datasets/SMPLX/convert_272_to_smplx.py \
+    --poses Datasets/SMPLX/demo_272_output/test272_1.npy \
+    --output Datasets/SMPLX/data_converted_to_smplx/ \
+    --mean Datasets/SMPLX/demo_272_output/mean_std/Mean.npy \
+    --std Datasets/SMPLX/demo_272_output/mean_std/Std.npy
+
 """
 import os
 import argparse
@@ -184,9 +187,5 @@ if __name__ == "__main__":
         process_file(args.poses, out, mean=mean, std=std)
     print("Done.")
 
-# python Datasets/SMPLX/convert_272_to_smplx.py \
-#     --poses Datasets/SMPLX/demo_272_output/test001.npy \
-#     --output Datasets/SMPLX/data_converted_to_smplx/ \
-#     --mean Datasets/SMPLX/demo_272_output/mean_std/Mean.npy \
-#     --std Datasets/SMPLX/demo_272_output/mean_std/Std.npy
+
 
